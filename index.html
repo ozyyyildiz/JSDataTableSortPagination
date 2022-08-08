@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <button class="btn btn-primary" onclick="getData()">Get Data</button>
+    <table class="table" id="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col" onclick="sortData('first_name')">Name</th>
+            <th scope="col" onclick="sortData('last_name')">Surname</th>
+            <th scope="col">E-Mail</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <button class="btn btn-secondary" id="prevButton" onclick="previousPage()">Önceki Sayfa</button>
+    <button class="btn btn-secondary" id="nextButton" onclick="nextPage()">Sonraki Sayfa</button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
